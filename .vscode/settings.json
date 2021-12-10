@@ -1,0 +1,7 @@
+{
+    "editor.smoothScrolling": true,
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "block",
+    "editor.cursorSurroundingLinesStyle": "all"
+}

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+body {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 400, 500, 700;
+  background-color: var(--body-bg-color);
+  padding: 0;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 400px);
+  left: 400px;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.card {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 20px;
+  background-color: var(--bg-cards);
+  color: var(--text-color);
+}
+
+.sidebar {
+  position: fixed;
+  padding-left: 20px;
+  width: 310px;
+  height: 100vh;
+}
+
+.content {
+  margin-left: 390px;
+  width: calc(100% - 390px);
+}
+
+.sidebar .profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sidebar .profile-card h3 {
+  margin: 0;
+}
+
+.sidebar .profile-card p {
+  font-size: 10px;
+}
+
+.sidebar .profile-card figure img {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  border: 3px solid green;
+}
+
+.sidebar .profile-card .profile-informations {
+  margin-bottom: 10px;
+}
+
+.sidebar .informations-card {
+  padding: 0px 15px;
+  margin: 10px 0px;
+}
+
+.sidebar .informations-card .informations {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.sidebar .informations-card .informations a {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.sidebar .techs-informations h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.sidebar .techs-informations .techs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.sidebar .techs-informations .techs .tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: var(--bg-techs);
+  font-size: 13px;
+  height: 25px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.content .my-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.content .my-projects h1 {
+  padding-left: 30px;
+}
+
+.content .my-projects p {
+  padding-right: 30px;
+}
+
+.content .projects-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.content .projects-cards .card-info {
+  padding-left: 15px;
+}
+
+.content .projects-cards .card-info .folder-name h5 {
+  padding-left: 20px;
+}
+
+.content .projects-cards .project .folder-name {
+  display: flex;
+  align-items: center;
+}
+
+.content .projects-cards .project .card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .projects-cards .project .description {
+  font-size: 13px;
+}
+
+.content .projects-cards .project .card-footer .status {
+  display: flex;
+  align-items: center;
+}
+
+.content .projects-cards .project .card-footer .main-language p {
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.content .projects-cards .project .card-footer .status p {
+  font-size: 10px;
+  padding: 0px 10px;
+}
+
+.content .recent-posts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.content .recent-posts h1 {
+  padding-left: 30px;
+}
+
+.content .posts .post {
+  padding: 20px 0px;
+}
+
+.content .posts .post img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.content .posts .post .post-informations .hashtags {
+  display: flex;
+}
+.content .posts .post .post-informations .hashtags .hashtag {
+  padding-right: 20px;
+}
+
+.content .posts .post {
+  display: flex;
+  align-items: center;
+}
