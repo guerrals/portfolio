@@ -207,3 +207,11 @@ a {
   display: flex;
   align-items: center;
 }
+
+.content .projects-cards a:hover {
+  opacity: 0.8;
+}
+
+.content .posts:hover {
+  opacity: 0.8;
+}
